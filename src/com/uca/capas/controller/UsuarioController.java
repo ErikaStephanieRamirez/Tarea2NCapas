@@ -33,7 +33,7 @@ public class UsuarioController {
 		if(result.hasErrors() || uService.findClaveAndUsuario(Usuario.getUusuario(), Usuario.getUclave()) == false) {
 			mav.addObject("message","Usuario no encontrado");
 			mav.setViewName("main");
-			
+			 
 		}
 		else {
 			List<Sucursal> sucursal = sService.findAll();

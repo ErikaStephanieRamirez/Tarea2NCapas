@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 10;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
