@@ -12,6 +12,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
 import javax.validation.constraints.Size;
 
 import java.math.BigInteger;
@@ -46,6 +47,7 @@ public class Sucursal {
     private String HoraC;
 	
 	@NotNull(message="Campo obligatorio")
+	@PositiveOrZero(message="Solo Numeros Positivos")
 	@Column(name="nmesas")
     private BigInteger nMesas;
 	

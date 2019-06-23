@@ -83,11 +83,11 @@ public class EmpleadoController {
 	}
 	
 	@RequestMapping(value="/GuardarEmpl",method= RequestMethod.POST)
-	public ModelAndView Add3(@Valid @ModelAttribute("empleadoDTO2") EmpleadoDTO empleadoDTO2 ,BindingResult result){
+	public ModelAndView Add3(@Valid @ModelAttribute("empleado") EmpleadoDTO empleadoDTO2 ,BindingResult result){
 		ModelAndView mav = new ModelAndView();	
 		
 		if(result.hasErrors()) {
-	    	mav.setViewName("AgregarE");
+	    	mav.setViewName("agregarE");
 	       }	
 		
 		else {

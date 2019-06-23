@@ -59,7 +59,7 @@ body>.grid {
 				</thead>
 				<c:forEach items="${sucursal}" var="sucursal">
 					<tbody>
-						<tr>
+						<tr style="padding: 15px;">
 							<th style="padding: 15px;">${sucursal.nombreS}</th>
 
 							<th><form name="form1"

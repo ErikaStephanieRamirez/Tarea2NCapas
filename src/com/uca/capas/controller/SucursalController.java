@@ -59,7 +59,7 @@ public class SucursalController {
 		ModelAndView mav = new ModelAndView();	
 		
 		if(result.hasErrors()) {
-	    	mav.setViewName("editar");
+	    	mav.setViewName("agregar");
 	       }	
 		
 		else {
