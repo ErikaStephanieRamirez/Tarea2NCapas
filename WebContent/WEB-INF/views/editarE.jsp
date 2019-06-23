@@ -30,7 +30,8 @@ body>.grid {
 	<div class="container"
 		style="width: 100%; height: 150px; background-size: 100% 100%; background-repeat: no-repeat; background: #13afa0;">
 		<form name="agregar"
-			action="${pageContext.request.contextPath}/volver" method="post">
+			action="${pageContext.request.contextPath}/volverP" method="post">
+			<INPUT TYPE="Hidden" NAME="idSucursal" value=${empleado.idSucursal}>
 			<div style="text-align: center; padding-top: 50px">
 				<span style="font-size: 50px;">Restaurante Rustico</span>
 			</div>

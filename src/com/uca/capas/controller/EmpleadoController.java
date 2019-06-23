@@ -92,11 +92,9 @@ public class EmpleadoController {
 		
 		else {
 			eService.Agregar(empleadoDTO2);
-			Sucursal sucursal = null;
-			sucursal=sService.findOne(empleadoDTO2.getIdSucursal());
+			Sucursal sucursal = sService.findOne(empleadoDTO2.getIdSucursal());
 			
-		 List<Empleado> empleado = null;
-  	     empleado = eService.findOnes(sucursal.getIdSucursal());
+		 List<Empleado> empleado = eService.findOnes(sucursal.getIdSucursal());
   	     
   	     mav.addObject("sucursal", sucursal);
   	     mav.addObject("empleado", empleado);
@@ -105,4 +103,19 @@ public class EmpleadoController {
 		}
 		return mav;
 	}
+	
+	@RequestMapping(value="/volverP",method= RequestMethod.POST)
+	public ModelAndView Volver(@RequestParam("idSucursal") Integer id_empleado){
+		ModelAndView mav = new ModelAndView();	
+		
+		Sucursal sucursal = sService.findOne(id_empleado);
+		
+		 List<Empleado> empl = eService.findOnes(sucursal.getIdSucursal());
+ 	     
+ 	     mav.addObject("sucursal", sucursal);
+ 	     mav.addObject("empleado", empl);
+		 mav.setViewName("perfil");
+		 return mav;
+	}
+	
 }

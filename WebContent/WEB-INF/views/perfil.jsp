@@ -106,11 +106,11 @@ body>.grid {
 							<th style="padding: 15px;">${empleado.edad}</th>
 							<th style="padding: 15px;">${empleado.genero}</th>
 							<th style="padding: 15px;">${empleado.estadoE}</th>
-							<th style="padding: 15px;"><form name="edit"
+							<th style="padding: 15px;">
+							<form name="edit"
 									action="${pageContext.request.contextPath}/EditarE"
 									method="post">
-									<INPUT TYPE="Hidden" NAME="id_empleado"
-										value=${empleado.idEmpleado}>
+									<INPUT TYPE="Hidden" NAME="id_empleado" value=${empleado.idEmpleado}>
 										<button class="ui animated button" tabindex="0" style="background: #13afa0">
 										<div class="hidden content" style="color: white;">Editar</div>
 										<div class="visible content">
