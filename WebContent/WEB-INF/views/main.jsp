@@ -79,11 +79,10 @@ body>.grid {
 
 	<div class="ui middle aligned center aligned grid">
 		<div class="column">
-			<h1 class="ui teal image header">
-				<div class="content">Iniciar Sesi&oacute;n</div>
-			</h1>
+			
+				<div class="content" style= "font-size: 40px;"><span class="ui teal image header">Iniciar Sesi&oacute;n</span></div>
+			<br><br>
 			<form:form class="ui large form" id="form" method="POST" action="${pageContext.request.contextPath}/inicio" ModelAttribute="Usuario">
-				
 				<div class="ui stacked segment">
 					<div class="field">
 						<div class="ui left icon input">

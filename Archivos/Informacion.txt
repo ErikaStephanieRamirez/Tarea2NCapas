@@ -1,0 +1,11 @@
+Alumna: Erika Stephanie Ramirez Miron 
+Carnet: 00157516
+
+Nombre de base de datos: tareaNCapas
+Usuario: postgres
+Contra: root
+
+Usuarios de la aplicacion: 
+	erika@gmail.com           clave:1234
+  	stephanie@gmail.com       clave: esrm
+

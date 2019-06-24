@@ -24,7 +24,7 @@ public class Sucursal {
 	
 	@Id 
 	@GeneratedValue(generator="sucursal_id_sucursal_seq",strategy= GenerationType.AUTO)
-	@SequenceGenerator(name="sucursal_id_sucursal_seq",sequenceName= "public.sucursal_id_sucursal_seq",allocationSize=1)
+	@SequenceGenerator(name="sucursal_id_sucursal_seq",sequenceName= "public.sucursal_id_sucursal_seq")
     @Column(name="id_sucursal")
     private Integer idSucursal ;
 	
@@ -34,7 +34,7 @@ public class Sucursal {
     private String NombreS;
 	
 	@NotEmpty(message="Campo obligatorio")
-    @Size(message="Supero 150 caracteres",max=150)
+    @Size(message="Supero 200 caracteres",max=200)
 	@Column(name="Ubicacion")
     private String Ubicacion;
 	
